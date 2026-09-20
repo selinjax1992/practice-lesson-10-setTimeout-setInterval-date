@@ -1,0 +1,2 @@
+import"./assets/reset-D65bUqBF.js";const n=setInterval(()=>{const e=new Date,t=(new Date(e.getFullYear(),e.getMonth(),e.getDate()+1)-e)/1e3;console.log(Math.floor(t))},1e3);addEventListener("click",()=>{clearInterval(n)});const a=(e,o,t)=>e-o>=0&&t-e<=0,l=new Date("2025-03-11T00:00:00"),r=new Date("2025-03-01T00:00:00"),s=new Date("2025-03-10T00:00:00");console.log(a(l,r,s));console.log("Hello");
+//# sourceMappingURL=02-date.js.map
