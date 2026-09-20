@@ -75,4 +75,3 @@ const date = new Date('2025-03-11T00:00:00'); // 11 березня 2025
 const startDate = new Date('2025-03-01T00:00:00'); // 1 березня 2025
 const endDate = new Date('2025-03-10T00:00:00'); // 10 березня 2025
 console.log(isDateInRange(date, startDate, endDate)); // true
-console.log('Hello');
