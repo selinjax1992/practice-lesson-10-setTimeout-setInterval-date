@@ -6,6 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/practice-lesson-10-setTimeout-setInterval-date',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
