@@ -1,0 +1,34 @@
+@import url('./reset.css');
+
+.timer-items {
+  display: flex;
+  column-gap: 20px;
+  max-width: max-content;
+  font-size: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timer-item {
+  position: relative;
+  min-width: 60px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.timer-item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+.timer-item:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  right: 0;
+  transform: translateX(calc(100% + 5px));
+}
